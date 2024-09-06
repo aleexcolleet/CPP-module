@@ -1,17 +1,18 @@
-#ifndef PHONEBOOK_APP
-# define PHONEBOOK_APP
+#ifndef PHONEBOOK_HPP
+#define PHONEBOOK_HPP
 
-# include "Contact.hpp"
+#include "contact.hpp"
 
-class Phonebook{
+class PhoneBook{
 	private:
-		Contact list[8];
-		int _readInput(void) const;
+		Contact	_contacts[8]:
+		int		_readInput(void) const;
 
 	public:
-		Phonebook();
+		PhoneBook();
 		~PhoneBook();
-		void addContact(void);
-		
-
+		void	addContact(void);
+		void	welcome(void) const;
 };
+
+#endif

@@ -1,21 +1,17 @@
 #include <iostream>
-using namespace std;
 
-int main(int as, char **av){
-	int	i;
+int main(int ac, char **av){
 	
-	i = 0;
-	if (as != 2){
-		cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
-		return (2);
+	if (ac == 1)
+		std::cout<<"* LOUD AND UNBEARABLE FEEDbACK NOISE *";
+	else {
+		for (int i = 1; av[i]; i++){
+			for(int j = 0; av[i][j]; j++)
+				std::cout<<(char) toupper(av[i][j]);
+			if (i < ac - 1)
+			std::cout<<' ';
+		}
 	}
-	while (av[1][i]){
-		if (av[1][i] >= 'a' && av[1][i] <= 'z')
-			cout << (char) toupper(av[1][i]);
-		else
-			cout << av[1][i];
-		i++;
-	}
-	cout << endl;
-	return (EXIT_SUCCESS);
+	std::cout<<std::endl;
+	return (0);
 }
