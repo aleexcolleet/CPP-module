@@ -10,7 +10,7 @@ int main(){
 		if (input.compare("ADD") == 0)
 			book.addContact();
 		else if (input.compare("SEARCH") == 0){
-		
+			book.printContacts();
 			
 		}
 

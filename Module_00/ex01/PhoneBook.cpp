@@ -22,6 +22,14 @@ void PhoneBook::addContact(void){
 	i++;
 }
 
+void PhoneBook::printContacts(void) const{
+	std::cout<<"I------------------PHONEBOOK CONTACTS-----------I"<< std::endl;
+	for (int i = 0; i < 8; i++){
+		this->_contacts[i].view(i);
+	}
+}
+
+
 void	PhoneBook::welcome(void) const{
 	std::cout << "\033[1;34m" << std::endl;  // Bold Blue
 	std::cout << " _____ _               _____         _   "  << std::endl;

@@ -12,6 +12,7 @@ class PhoneBook{
 		PhoneBook();
 		~PhoneBook();
 		void	addContact(void);
+		void	printContacts(void) const;
 		void	welcome(void) const;
 };
 
