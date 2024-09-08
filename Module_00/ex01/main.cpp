@@ -1,4 +1,4 @@
-#include "Phonebook.hpp"
+#include "PhoneBook.hpp"
 #include <iostream>
 #include <limits>
 
@@ -11,8 +11,10 @@ int main(){
 			book.addContact();
 		else if (input.compare("SEARCH") == 0){
 			book.printContacts();
-			
+			book.search();
 		}
-
+		std::cout << "->>" << std::flush;
+		std::cin >> input;
 	}
+	return 0;
 }
