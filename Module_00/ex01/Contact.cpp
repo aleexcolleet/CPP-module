@@ -11,7 +11,7 @@ Contact::~Contact(){
 std::string Contact::_getInput(std::string str) const {
     std::string input = "";
     bool        valid = false;
-    do
+    while(!valid)
     {
         std::cout << str << std::flush;
         std::getline(std::cin, input);
@@ -21,7 +21,7 @@ std::string Contact::_getInput(std::string str) const {
             std::cin.clear();
             std::cout << "Invalid input; please try again." << std::endl;
         }
-    } while (!valid);
+    }
     return (input);
 }
 

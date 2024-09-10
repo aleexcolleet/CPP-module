@@ -6,7 +6,6 @@ PhoneBook::PhoneBook(){
 
 PhoneBook::~PhoneBook(){
 
-
 }
 //so that each time I call it, 
 //it adds a contact and does i++
@@ -29,7 +28,6 @@ void PhoneBook::printContacts(void) const{
 	}
 	std::cout<<std::endl;
 }
-
 
 void PhoneBook::welcome(void) const{
 	std::cout << "\033[1;34m" << std::endl;  // Bold Blue
@@ -54,7 +52,7 @@ int PhoneBook::_readInput() const {
 	int		input = -1;
 	bool	valid = false;
 	while(!valid){
-		std::cout << "Please enter the contact index {1,8} ☎️ )" << std::flush;
+		std::cout << "Please enter the contact index {0,7} ☎️ )" << std::flush;
 		std::cin >> input;
 		if (std::cin.good() && (input >= 0 && input <= 8)) {
 			valid = true;
