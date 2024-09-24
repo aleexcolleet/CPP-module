@@ -1,7 +1,7 @@
 NAME		= PhoneBook
 	
 CC			= c++
-FLAGS		= -Wall -Wextra -Werror
+FLAGS		= -Wall -Wextra -Werror -std=c++98
 RM			= rm -rf
 
 OBJDIR = .objFiles
@@ -18,11 +18,6 @@ YELLOW		=	\e[93;5;226m
 GRAY		=	\e[33;2;37m
 RESET		=	\e[0m
 CURSIVE		=	\e[33;3m
-
-#Debug 
-ifeq ($(DEBUG), 1)
-   OPTS = -g
-endif
 
 .PHONY: all clean fclean re bonus norm
 
