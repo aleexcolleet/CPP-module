@@ -1,4 +1,4 @@
-NAME		= HiThisIsBrain
+NAME		= UnnecessaryViolence
 
 CC			= c++
 FLAGS		= -Wall -Wextra -Werror -std=c++98
@@ -6,10 +6,11 @@ RM			= rm -rf
 
 OBJDIR = .objFiles
 
-FILES		= main
+FILES		= main Weapon HumanA HumanB
 
 SRC			= $(FILES:=.cpp)
 OBJ			= $(addprefix $(OBJDIR)/, $(FILES:=.o))
+HEADER		= Weapon.hpp HumanA.hpp HumanB.hpp
 
 #Colors:
 GREEN		=	\e[92;5;118m
