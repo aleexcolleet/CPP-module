@@ -7,10 +7,9 @@ HumanB::~HumanB(){
 	
 }
 
-void HumanB::setWeapon(Weapon* WeapB){
+void HumanB::setWeapon(Weapon& WeapB){
 
-	this->_WeaponOfB = WeapB;
-
+	this->_WeaponOfB = &WeapB;
 }
 
 void HumanB::attack(){

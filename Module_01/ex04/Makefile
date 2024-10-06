@@ -1,4 +1,4 @@
-NAME		= ZombieHorde
+NAME		= SedIsForLosers
 
 CC			= c++
 FLAGS		= -Wall -Wextra -Werror -std=c++98
@@ -6,11 +6,11 @@ RM			= rm -rf
 
 OBJDIR = .objFiles
 
-FILES		= main Zombie zombieHorde
+FILES		= main
 
 SRC			= $(FILES:=.cpp)
 OBJ			= $(addprefix $(OBJDIR)/, $(FILES:=.o))
-HEADER		= Zombie.hpp
+HEADER		= 
 
 #Colors:
 GREEN		=	\e[92;5;118m

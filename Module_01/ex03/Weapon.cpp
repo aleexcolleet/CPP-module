@@ -15,10 +15,3 @@ void Weapon::setType(std::string newType){
 	this->_type = newType;
 	return ;
 }
-
-void Weapon::announce(){
-	std::cout <<"Weapon type--> "<< this->_type<<std::endl;
-	return ;
-}
-
-

@@ -23,7 +23,7 @@ CURSIVE		=	\e[33;3m
 
 all: $(NAME)
 
-$(NAME): $(OBJ) $(HEADER)
+$(NAME): $(OBJ) $(HEADER) Makefile
 	@$(CC) $(OBJ) $(OPTS) -o $(NAME)
 	@printf "$(_SUCCESS) $(GREEN)- Executable ready.\n$(RESET)"
 
